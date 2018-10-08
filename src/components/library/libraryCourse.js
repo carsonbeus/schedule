@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-
+import Icon from '../icon';
 class LibraryCourse extends Component {
     render() {
         return(
             <div className="library-course">
                 <label className="library-course__title">Problem Solving</label>
-                {/* icon component */}
+                { Icon('fas fa-check', 'library-course__icon')}
                 {/* arrow component */}
-                {/* action button component */}
+                {/* {Icon('fas fa-plus-circle', 'library-course__action')} */}
                 <div className="library-course__description">
                     <label>Course Description</label>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam yo no se y todo se que te bote. Cuando yo estoy haciendo el desarrollo de software yo estoy muy feliz.</p>
