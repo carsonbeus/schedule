@@ -6,7 +6,7 @@ class Library extends Component {
         return(
            <div className="library">
                <h1 className="library_title">Course Library</h1>
-               <LibraryCourse />
+                <LibraryCourse />
                 <LibraryCourse />
                 <LibraryCourse />
                 <LibraryCourse />
