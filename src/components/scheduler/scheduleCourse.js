@@ -9,7 +9,7 @@ class ScheduleCourse extends Component {
             <div className="schedule-course">
                <label>{this.props.title}</label>
             </div>
-        )
+        );
     }
 }
 export default ScheduleCourse;
