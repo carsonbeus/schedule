@@ -84,6 +84,12 @@ export function fetchCourses() {
                 title: "HTML/CSS Bootcamp",
                 description: "Learn HTML5 and CSS3 from scratch, starting with the basics and finishing by building five projects from scratch.",
                 enrolled: false
+            },
+            {
+                id: 12,
+                title: 'This is an Example of a Large Description',
+                description: 'Lorem ipsum dolor sit amet, cu dicant nostrud mediocritatem sit, graeci everti nusquam eu vix. Ut oporteat antiopam convenire sea, omittam reformidans eos an. An graeci commodo nec. Perpetua aliquando ius ad, id vis consul propriae. Ea fierent assentior vel, invidunt facilisi sit an, eu quo sumo omnis. Mei te semper principes, an mei invidunt repudiare, summo voluptatum cu eos. In vis dolor ignota, mea erat prompta intellegebat et. Vis ne duis altera dissentiet, id tale fierent mandamus duo, ut suas oportere pri. Cu graeci insolens explicari has. Ad pri doctus feugiat, dicant nostro facilis usu ad.',
+                enrolled: false
             }
         ]
     }
