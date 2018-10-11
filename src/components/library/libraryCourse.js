@@ -27,7 +27,7 @@ class LibraryCourse extends Component {
         } else {
             document.getElementById(this.id).classList.remove('library-course-selected');
         }
-        this.setState({ status })
+        this.setState({ status, height })
     }.bind(this)
 
     render() {
