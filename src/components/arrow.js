@@ -12,7 +12,7 @@ class Arrow extends Component {
 
     toggleArrow = function () {
         this.props.callback(this.state.status)
-        if(this.state.status) {
+        if (this.state.status) {
             document.getElementById(this.id).classList.remove('arrow-closed');
         } else {
             document.getElementById(this.id).classList.add('arrow-closed');
@@ -28,6 +28,5 @@ class Arrow extends Component {
         )
     }
 }
-
 
 export default Arrow;

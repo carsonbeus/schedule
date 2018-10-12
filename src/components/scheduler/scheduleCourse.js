@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
@@ -14,5 +14,5 @@ class ScheduleCourse extends Component {
         );
     }
 }
-export default connect(null, actions)(ScheduleCourse);
 
+export default connect(null, actions)(ScheduleCourse);

@@ -6,13 +6,11 @@ import Icon from "../icon";
 import Arrow from "../arrow";
 import Action from "../action";
 
-import AnimateHeight from 'react-animate-height';
-
+import AnimateHeight from "react-animate-height";
 
 class LibraryCourse extends Component {
-
     constructor(props) {
-        super(props)
+        super(props);
 
         this.state = {
             status: true,
@@ -20,18 +18,21 @@ class LibraryCourse extends Component {
         };
     }
 
-    handleCallback = function(status) {
+    handleCallback = function (status) {
         let height = this.state.height == 0 ? 'auto' : 0;
         if (!status) {
-            document.getElementById(this.id).classList.add('library-course-selected');
+            document.getElementById(this.id).classList.add("library-course-selected");
         } else {
-            document.getElementById(this.id).classList.remove('library-course-selected');
+            document.getElementById(this.id).classList.remove("library-course-selected");
         }
-        this.setState({ status, height })
-    }.bind(this)
+        this.setState({
+            status,
+            height
+        });
+    }.bind(this);
 
     render() {
-        this.id = `library-course-${this.props.id}`
+        this.id = `library-course-${this.props.id}`;
         return (
             <div id={this.id} className="library-course">
                 <div className="library-course__title-check">
@@ -46,11 +47,11 @@ class LibraryCourse extends Component {
                 <Action
                     id={this.props.id}
                     onClick={() => this.props.toggleEnrolled(this.props.id)}
-                    className={`library-course__action ${this.props.enrolled ? 'action-remove' : ''}` }
+                    className={`library-course__action ${this.props.enrolled ? 'action-remove' : ''}`}
                 />
                 <AnimateHeight
-                    duration={ 300 }
-                    height={ this.state.height }
+                    duration={300}
+                    height={this.state.height}
                 >
                     <div className="library-course__description">
                         <label>Course Description</label>

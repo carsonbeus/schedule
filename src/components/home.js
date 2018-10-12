@@ -6,10 +6,9 @@ import Schedule from './scheduler/schedule';
 class Home extends Component {
   render() {
     return (
-      <div className='home'>
-        <Schedule />
+      <div className="home">
         <Library />
-
+        <Schedule />
       </div>
     );
   }
